@@ -3,7 +3,7 @@ import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { CgWebsite } from "react-icons/cg";
 import { BsLink45Deg } from "react-icons/bs";
-import { useTranslation, Trans } from "react-i18next";
+import { Trans } from "react-i18next";
 
 function ProjectCards(props) {
   return (

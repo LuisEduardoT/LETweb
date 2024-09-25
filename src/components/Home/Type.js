@@ -1,6 +1,5 @@
 import React from "react";
 import Typewriter from "typewriter-effect";
-import { useTranslation } from "react-i18next";
 
 function Type() { 
   return (

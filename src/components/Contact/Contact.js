@@ -7,7 +7,7 @@ import {
   AiOutlineTwitter,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
-import { useTranslation, Trans } from "react-i18next";
+import { Trans } from "react-i18next";
 
 function Contact() {
 	
