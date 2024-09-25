@@ -8,27 +8,38 @@ import {
   AiFillMail,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import { useTranslation, Trans } from "react-i18next";
 
 function Home2() {
+	const { t } = useTranslation(); 
   return (
     <Container fluid className="home-about-section" id="about">
       <Container>
         <Row>
           <Col md={8} className="home-about-description">
-            <h1 style={{ fontSize: "2.6em" }}>
+            <Trans i18nKey="home_title1">
+				<h1 style={{ fontSize: "2.6em" }}>
               SI QUIERES <span className="purple"> CONOCERME </span> UN POCO…
-            </h1>
+				</h1>
+			</Trans>
             <p className="home-about-body">
-              De pequeño me encantaban los idiomas y la informática. Creo que he sabido sacarle partido.
-              <br />
-              <br />Actualmente mis servicios están disponibles para la <b className="purple">combinación EN ↔️ es_ES </b>
+			{t('home_abouttext1')}
               <br />
               <br />
+			 <Trans i18nKey="home_abouttext2"> 
+			  Actualmente mis servicios están disponibles para la <b className="purple">combinación EN ↔️ es_ES </b>
+			 </Trans> 
+              <br />
+              <br />
+			 <Trans i18nKey="home_abouttext3"> 
               Aunque me dedico especialmente a la traducción <b className="purple">audiovisual</b> y estoy especializado en <b className="purple">localización</b> de webs y software, tengo especial interés por la traducción <b className="purple">técnica</b> y <b className="purple">turística</b>.
+             </Trans> 
+			  <br />
               <br />
-              <br />
-              Cuando me es posible, me gusta colaborar en <b className="purple">proyectos <i>indie</i></b> o participar en eventos de traducción voluntaria para ayudar a difundir productos pequeños o en los que estoy especialmente interesado, como la <b className="purple"> LocJam</b> de itch.io.
-            </p>
+			 <Trans i18nKey="home_abouttext4"> 
+              Cuando me es posible, me gusta colaborar en <b className="purple">proyectos <i>indie</i></b> o participar en eventos de traducción voluntaria para ayudar a difundir productos pequeños o en los que estoy especialmente interesado, como la <b className="purple">LocJam</b> de itch.io.
+             </Trans>
+			</p>
           </Col>
           <Col md={4} className="myAvtar">
             <Tilt>
@@ -38,9 +49,13 @@ function Home2() {
         </Row>
         <Row>
           <Col md={12} className="home-about-social">
-            <h1>PUEDES <span className="purple"> CONTACTAR </span> CONMIGO</h1>
+            <Trans i18nKey="home_title2">
+				<h1>PUEDES <span className="purple"> CONTACTAR </span> CONMIGO</h1>
+			</Trans>
             <p>
-              Enviándome un <span className="purple">mensaje</span> por correo electrónico o mensaje privado
+			  <Trans i18nKey="home_contacttext1">
+				Enviándome un <span className="purple">mensaje</span> por correo electrónico o mensaje privado
+			  </Trans>
             </p>
             <ul className="home-about-social-links">
               <li className="social-icons">

@@ -7,14 +7,16 @@ import {
   AiOutlineTwitter,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import { useTranslation, Trans } from "react-i18next";
 
 function Contact() {
+	const { t } = useTranslation();
   return (
     <Container fluid className="contact-section">
    <div>
         <Particle />
 		<h1 className="project-heading">
-          Ponte en <strong className="purple">contacto</strong> conmigo
+          <Trans i18nKey="contact_title1">Ponte en <strong className="purple">contacto</strong> conmigo</Trans>
         </h1>
         
 		<div style={{marginTop:"50px"}}>
@@ -22,7 +24,7 @@ function Contact() {
 		</div>
 	  <Row>
           <Col md={12} className="home-about-social">
-            <h1>O a través de <span className="purple">redes sociales</span></h1>
+            <h1><Trans i18nKey="contact_title2">O a través de <span className="purple">redes sociales</span></Trans></h1>
             <ul className="home-about-social-links">
 			  <li className="social-icons-big">
                 <a

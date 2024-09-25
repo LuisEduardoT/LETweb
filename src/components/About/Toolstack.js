@@ -9,13 +9,13 @@ function Toolstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       <Col xs={4} md={2} className="tech-icons">
-        <img src={photoshop} class="tool-img" title="HTML" alt="Adobe Photoshop"/>
+        <img src={photoshop} class="tool-img" title="Adobe Photoshop" alt="Adobe Photoshop"/>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <img src={premiere} class="tool-img" title="HTML" alt="Adobe Premiere"/>
+        <img src={premiere} class="tool-img" title="Adobe Premiere" alt="Adobe Premiere"/>
       </Col>
 	  <Col xs={4} md={2} className="tech-icons">
-        <img src={wpress} class="tool-img" title="HTML" alt="WordPress"/>
+        <img src={wpress} class="tool-img" title="WordPress" alt="WordPress"/>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <img src={html} class="tool-img" width="10%" title="HTML" alt="HTML"/>

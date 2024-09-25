@@ -1,0 +1,76 @@
+{
+	"_comment": "NAVBAR STRINGS",
+	
+    "home": "Inicio",
+	"about": "Quién soy",
+	"projects": "Proyectos",
+	"services": "Servicios",
+	"contact": "Contacto",
+	
+	"_comment": "FOOTER STRINGS",
+	
+	"credit": "Diseño adaptado de Soumyajit Behera",
+	
+	"_comment": "HOME STRINGS",
+	
+	"home_greet": "¡Hola!",
+	"typewrite": ["Hi", "bye"],
+	"home_myname": "SOY<1> LUIS EDUARDO SENDÍN</1>",
+	"home_title1": "<0>SI QUIERES <1> CONOCERME </1> UN POCO…</0>",
+	"home_abouttext1": "De pequeño me encantaban los idiomas y la informática. Creo que he sabido sacarle partido.",
+	"home_abouttext2": "Actualmente mis servicios están disponibles para la <1>combinación EN ↔️ es_ES </1>.",
+	"home_abouttext3": "Aunque me dedico especialmente a la traducción <1>audiovisual</1> y estoy especializado en <3>localización</3> de webs y software, tengo especial interés por la traducción <5>técnica</5> y <7>turística</7>.",
+	"home_abouttext4": "Cuando me es posible, me gusta colaborar en <1>proyectos <i>indie</i></1> o participar en eventos de traducción voluntaria para ayudar a difundir productos pequeños o en los que estoy especialmente interesado, como la <3>LocJam</3> de itch.io.",
+	"home_title2": "<0>PUEDES <1> CONTACTAR </1> CONMIGO</0>",
+	"home_contacttext1": "Enviándome un <1>mensaje</1> por correo electrónico o mensaje privado",
+	
+	"_comment": "ABOUT STRINGS",
+
+	"about_title1": "Sobre <1>mí</1>",
+	"about_content1": "¡Hola! Me llamo <1>Luis Eduardo </1>y soy de <3>Salamanca, España. </3>Actualmente soy traductor autónomo y <5>mis servicios</5> están disponibles de inglés a español (peninsular) y viceversa.",
+	"about_content2": "Soy graduado en Traducción e Interpretación por la Universidad de Salamanca y me he especializado a través del Máster en Traducción Audiovisual y Localización de la Universidad Autónoma de Madrid.",
+	"about_content3": "Tengo <1>experiencia</1> localizando texto <i>ingame </i>y contenido promocional de videojuegos populares tipo battle royale, de acción-aventura de piratas y de disparos en primera persona.",
+	"about_content4": "Además de traducir, también me gusta dedicar tiempo a",
+	"about_list1": "Mejorar mi nivel de japonés",
+	"about_list2": "Aprender sobre botánica",
+	"about_list3": "Jugar a videojuegos",
+	"about_quote": "\"A famous explorer once said that the extraordinary is in what we do, not who we are.\"",
+	"about_title2": "<0>Software</0> que utilizo",
+	"about_title3": "Otras <1>herramientas</1> que manejo",
+	
+	"_comment": "PROJECTS STRINGS",
+	
+	"work_title1": "Mis últimos <1>proyectos</1>",
+	"work_description1": "Aquí puedes echar un vistazo a lo que he estado haciendo recientemente.",
+	"work_cardtitle1": "Loki Games OÜ",
+	"work_carddesc1": "Localización de textos ingame y traducción de contenido web y publicaciones para redes.",
+	"work_cardtitle2": "Proyecto INGAME",
+	"work_carddesc2": "Localización de un videojuego educativo y documentos formativos.",
+	"work_cardtitle3": "Proyecto GAMIGRATION",
+	"work_carddesc3": "Traducción de cuestionarios para profesores, estudiantes y padres y madres del proyecto",
+	"work_cardtitle4": "Asociación de Profesores de Japonés en España (APJE)",
+	"work_carddesc4": "Traducción de japonés a español de diversas entradas del blog pertenecientes a eventos y actividades organizadas por la asociación.",
+	"work_title2": "<0>Otros</0> proyectos",
+	"work_cardtitle5": "Simple MMO App Hub",
+	"work_carddesc5": "Localización del cliente multifunción para Windows del videojuego web SimpleMMO",
+	"work_cardtitle6": "LocJAM 6: Not Enough Time",
+	"work_carddesc6": "Participante en la sexta edición del evento de localización LocJAM de itch.io para traducir el juego Not Enough Time. El equipo estuvo formado por seis integrantes y fui responsable de la gestión del proyecto, divisón de tareas y preparación de archivos, además de traducir y revisar.",
+	"work_cardlink1": "Ir al sitio",
+	
+	
+	"_comment": "CONTACT STRINGS",
+	
+	"contact_title1": "Ponte en <1>contacto</1> conmigo",
+	"contact_title2": "O a través de <1>redes sociales</1>",
+	"form_title": "¡Envíame un mensaje por correo!",
+	"form_name": "Nombre",
+	"ph_name": "Tu nombre",
+	"form_mail": "Correo electrónico",
+	"ph_mail": "Tu correo",
+	"form_message": "Mensaje",
+	"ph_message": "¡Escríbeme algo!",
+	"form_submit": "Enviar",
+	
+	
+	"endend": "null"
+}

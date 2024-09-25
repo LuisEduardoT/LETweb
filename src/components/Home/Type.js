@@ -1,7 +1,9 @@
 import React from "react";
 import Typewriter from "typewriter-effect";
+import { useTranslation, Trans } from "react-i18next";
 
 function Type() {
+	const { t } = useTranslation(); 
   return (
     <Typewriter
       options={{
@@ -19,7 +21,9 @@ function Type() {
         deleteSpeed: 40,
 		delay: 80,
       }}
-    />
+    >
+	
+	</Typewriter>
   );
 }
 
