@@ -10,7 +10,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { useTranslation, Trans } from "react-i18next";
 
 function Contact() {
-	const { t } = useTranslation();
+	
   return (
     <Container fluid className="contact-section">
    <div>

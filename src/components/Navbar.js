@@ -22,7 +22,7 @@ const lngs = {
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
-  const { t, i18n } = useTranslation(); 
+  const { i18n } = useTranslation(); 
 
   function scrollHandler() {
     if (window.scrollY >= 20) {

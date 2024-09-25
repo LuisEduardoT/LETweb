@@ -6,7 +6,6 @@ import { BsLink45Deg } from "react-icons/bs";
 import { useTranslation, Trans } from "react-i18next";
 
 function ProjectCards(props) {
-	const { t } = useTranslation();
   return (
     <Card className="project-card-view">
       <Card.Img variant="top" src={props.imgPath} alt="card-img" />

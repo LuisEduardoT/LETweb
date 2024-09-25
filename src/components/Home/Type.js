@@ -1,9 +1,8 @@
 import React from "react";
 import Typewriter from "typewriter-effect";
-import { useTranslation, Trans } from "react-i18next";
+import { useTranslation } from "react-i18next";
 
-function Type() {
-	const { t } = useTranslation(); 
+function Type() { 
   return (
     <Typewriter
       options={{

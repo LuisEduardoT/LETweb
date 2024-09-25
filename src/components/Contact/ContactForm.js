@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import emailjs from 'emailjs-com';
-import { useTranslation, Trans } from "react-i18next";
+import { useTranslation } from "react-i18next";
 
 const SERVICE_ID = "service_8xtoibv";
 const TEMPLATE_ID = "template_nr8bjos";

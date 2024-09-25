@@ -18,7 +18,6 @@ import "./style.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import './i18n.js'
-import { useTranslation } from "react-i18next";
 
 function App() {
   const [load, upadateLoad] = useState(true);

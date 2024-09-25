@@ -8,7 +8,6 @@ import Toolstack from "./Toolstack";
 import { useTranslation, Trans } from "react-i18next";
 
 function About() {
-	const { t } = useTranslation();
   return (
     <Container fluid className="about-section">
       <Particle />
