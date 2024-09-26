@@ -3,9 +3,11 @@ import { initReactI18next } from "react-i18next";
 import enJSON from "./locale/en/en.json";
 import esJSON from "./locale/es/es.json";
 import Backend from "i18next-http-backend";
+import languageDetector from "i18next-browser-languagedetector";
 
 i18n
 .use(initReactI18next)
+.use(languageDetector)
 .use(Backend)
 .init({
 	debug: true,
@@ -13,8 +15,7 @@ i18n
 	 en: { translation: enJSON },
 	 es: { translation: esJSON }, 
  }, // Where we're gonna put translations' files
- lng: "es",     // Set the initial language of the App
- fallbackLng: "es", // Language that will be loaded in case the translations the user is looking for are not available. 
+ fallbackLng: "en", // Language that will be loaded in case the translations the user is looking for are not available. 
  interpolation: {
 	escapeValue: false,
   }, // used to escape the values and avoid XSS attacks, we will set it to false, because React already does it by default.
