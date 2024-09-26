@@ -1,32 +1,22 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import Button from "react-bootstrap/Button";
 import Particle from "../Particle";
 import ContactForm from "./ContactForm.js";
-import { AiOutlineDownload } from "react-icons/ai";
-import { Document, Page, pdfjs } from "react-pdf";
 import {
   AiFillGithub,
   AiOutlineTwitter,
-  AiFillMail,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
-import "react-pdf/dist/esm/Page/AnnotationLayer.css";
-pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
+import { Trans } from "react-i18next";
 
-function ResumeNew() {
-  const [width, setWidth] = useState(1200);
-
-  useEffect(() => {
-    setWidth(window.innerWidth);
-  }, []);
-
+function Contact() {
+	
   return (
     <Container fluid className="contact-section">
    <div>
         <Particle />
 		<h1 className="project-heading">
-          Ponte en <strong className="purple">contacto</strong> conmigo
+          <Trans i18nKey="contact_title1">Ponte en <strong className="purple">contacto</strong> conmigo</Trans>
         </h1>
         
 		<div style={{marginTop:"50px"}}>
@@ -34,7 +24,7 @@ function ResumeNew() {
 		</div>
 	  <Row>
           <Col md={12} className="home-about-social">
-            <h1>O a través de <span className="purple">redes sociales</span></h1>
+            <h1><Trans i18nKey="contact_title2">O a través de <span className="purple">redes sociales</span></Trans></h1>
             <ul className="home-about-social-links">
 			  <li className="social-icons-big">
                 <a
@@ -74,4 +64,4 @@ function ResumeNew() {
   );
 }
 
-export default ResumeNew;
+export default Contact;

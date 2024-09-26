@@ -5,22 +5,24 @@ import Container from "react-bootstrap/Container";
 import logo from "../Assets/logo.png";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
-import { CgGitFork } from "react-icons/cg";
-import { ImBlog } from "react-icons/im";
 import { MdOutlineMailOutline } from "react-icons/md";
-import { AiOutlineLaptop } from "react-icons/ai";
 import {
-  AiFillStar,
   AiOutlineHome,
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
 } from "react-icons/ai";
+import { useTranslation, Trans } from "react-i18next";
+import '../i18n.js';
 
-import { CgFileDocument } from "react-icons/cg";
+const lngs = {
+	en: { nativeName: "English" },
+	es: { nativeName: "Español" },
+}
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
+  const { i18n } = useTranslation(); 
 
   function scrollHandler() {
     if (window.scrollY >= 20) {
@@ -57,7 +59,7 @@ function NavBar() {
           <Nav className="ms-auto" defaultActiveKey="#home">
             <Nav.Item>
               <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
-                <AiOutlineHome style={{ marginBottom: "2px" }} /> Inicio
+                <AiOutlineHome style={{ marginBottom: "2px" }} /> <Trans i18nKey="home" />
               </Nav.Link>
             </Nav.Item>
 
@@ -67,7 +69,7 @@ function NavBar() {
                 to="/about"
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlineUser style={{ marginBottom: "2px" }} /> Quién soy
+                <AiOutlineUser style={{ marginBottom: "2px" }} /> <Trans i18nKey="about" />
               </Nav.Link>
             </Nav.Item>
 
@@ -80,11 +82,11 @@ function NavBar() {
                 <AiOutlineFundProjectionScreen
                   style={{ marginBottom: "2px" }}
                 />{" "}
-                Proyectos
+                <Trans i18nKey="projects" />
               </Nav.Link>
             </Nav.Item>
 
-            {/* REMOVE WHEN SERVICES IS READY TO GO.
+            {/* REMOVE WHEN SERVICES IS READY TO GO AND ADD import { AiOutlineLaptop } from "react-icons/ai";
 			<Nav.Item>
               <Nav.Link
                 as={Link}
@@ -92,7 +94,8 @@ function NavBar() {
                 onClick={() => updateExpanded(false)}
 				style={{ display: "" }}
               >
-                <AiOutlineLaptop  style={{ marginBottom: "2px" }} /> Servicios
+                <AiOutlineLaptop  style={{ marginBottom: "2px" }} />
+				<Trans i18nKey="services" />
               </Nav.Link>
             </Nav.Item>*/}
 
@@ -102,20 +105,18 @@ function NavBar() {
                 to="/contact"
                 onClick={() => updateExpanded(false)}
               >
-                <MdOutlineMailOutline style={{ marginBottom: "2px" }} /> Contacto
+                <MdOutlineMailOutline style={{ marginBottom: "2px" }} /> <Trans i18nKey="contact" />
               </Nav.Link>
             </Nav.Item>
 
-            <Nav.Item className="fork-btn">
-              <Button
-                href=""
-                target="_blank"
-                className="fork-btn-inner"
-              >
-                {"English"}
-                
-              </Button>
+			<Nav.Item className="fork-btn">
+				{Object.keys(lngs).map((lng) => (
+				<Button className="fork-btn-inner" type="submit" key={lng} onClick={() => i18n.changeLanguage(lng)} disabled={i18n.resolvedLanguage === lng}>
+					{lngs[lng].nativeName}
+				</Button>
+				))}
             </Nav.Item>
+			
           </Nav>
         </Navbar.Collapse>
       </Container>

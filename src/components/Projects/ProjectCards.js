@@ -3,6 +3,7 @@ import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { CgWebsite } from "react-icons/cg";
 import { BsLink45Deg } from "react-icons/bs";
+import { Trans } from "react-i18next";
 
 function ProjectCards(props) {
   return (
@@ -16,7 +17,7 @@ function ProjectCards(props) {
 		<div display="flex" alignItems="flex-end" flexDirection="column"  height="100%">
         <Button variant="primary" href={props.ghLink} target="_blank" position="absolute" bottom="0" margintop="auto">
           <BsLink45Deg /> &nbsp;
-          {props.isBlog ? "Blog" : "GitHub"}
+          {props.isBlog ? "Blog" : <Trans i18nKey="work_cardlink1" />}
         </Button>
         {"\n"}
         {"\n"}

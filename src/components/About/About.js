@@ -1,11 +1,11 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle";
-import Github from "./Github";
 import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
 import laptopImg from "../../Assets/about.png";
 import Toolstack from "./Toolstack";
+import { Trans } from "react-i18next";
 
 function About() {
   return (
@@ -22,7 +22,7 @@ function About() {
             }}
           >
             <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
-              Sobre <strong className="purple">mí</strong>
+              <Trans i18nKey="about_title1">Sobre <strong className="purple">mí</strong></Trans>
             </h1>
             <Aboutcard />
           </Col>
@@ -35,12 +35,12 @@ function About() {
           </Col>
         </Row>
         <h1 className="project-heading">
-          <strong className="purple">Software</strong> que utilizo 
+          <Trans i18nKey="about_title2"><strong className="purple">Software</strong> que utilizo </Trans>
         </h1>
         <Techstack />
 
         <h1 className="project-heading">
-          Otras <strong className="purple">herramientas</strong> que manejo
+          <Trans i18nKey="about_title3">Otras <strong className="purple">herramientas</strong> que manejo</Trans>
         </h1>
         <Toolstack />
 

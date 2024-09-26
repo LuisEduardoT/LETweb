@@ -1,0 +1,76 @@
+{
+	"_comment": "NAVBAR STRINGS",
+	
+    "home": "Home",
+	"about": "About me",
+	"projects": "Work",
+	"services": "Services",
+	"contact": "Contact",
+	
+	"_comment": "FOOTER STRINGS",
+	
+	"credit": "Adapted from Soumyajit Behera",
+	
+	"_comment": "HOME STRINGS",
+	
+	"home_greet": "Hi there!",
+	"typewrite": ["Hi", "bye"],
+	"home_myname": "I'M<1> LUIS EDUARDO SENDÍN</1>",
+	"home_title1": "<0>LET ME <1> INTRODUCE </1> MYSELF</0>",
+	"home_abouttext1": "When I was a child I fell in love with languages and technology. Since then, I think I have learnt a thing or two…",
+	"home_abouttext2": "I am currently offering my services for the <1>EN ↔️ es_ES language pair</1>.",
+	"home_abouttext3": "I primarily focus on <1>audiovisual</1> translation projects, with a specialization in web and software <3>localisation</3>. Additionally, I have a strong interest in <5>technical and tourism-related</5> translation work.",
+	"home_abouttext4": "Whenever possible, I enjoy collaborating on indie projects or participating in translation events to help promote small products or those I'm particularly interested in, such as itch.io's <3>LocJam</3>.",
+	"home_title2": "<0><1>CONTACT </1>ME</0>",
+	"home_contacttext1": "Send me an <1>email</1> or a <1>DM</1> through socials",
+	
+	"_comment": "ABOUT STRINGS",
+
+	"about_title1": "About <1>me</1>",
+	"about_content1": "¡Hello! My name is <1>Luis Eduardo </1> and I am from Salamanca, Spain. Currently, I am a freelance translator and <5>my services</5> are available for English and European Spanish.",
+	"about_content2": "I graduated from the University of Salamanca with a Bachelor's in Translation and Interpreting, after which I specialised through a Master's in Audiovisual Translation and Localisation from the Autonomous University of Madrid.",
+	"about_content3": "I am <1>experienced</1> in localising webpages, <i>ingame</i> text strings and promotional content. I have worked in popular video games of different genres such as battle royale, pirate action-adventure and first-person shooters",
+	"about_content4": "Apart from translating, I like dedicating time",
+	"about_list1": "Enhacing my Japanese skills",
+	"about_list2": "Learning about plants and botanics",
+	"about_list3": "Playing videogames",
+	"about_quot": "\"\"",
+	"about_title2": "<0>Software</0> I use",
+	"about_title3": "Other <1>tools</1>",
+	
+	"_comment": "PROJECTS STRINGS",
+	
+	"work_title1": "Latest <1>projects</1>",
+	"work_description1": "Have a look at what I have been up to lately.",
+	"work_cardtitle1": "Loki Games OÜ",
+	"work_carddesc1": "Localising <i>ingame</i> text strings and translating web content and social media marketing posts.",
+	"work_cardtitle2": "INGAME Project",
+	"work_carddesc2": "Localising text strings for a serious game and translating a handbook for educators.",
+	"work_cardtitle3": "GAMIGRATION Project",
+	"work_carddesc3": "Translating questionnaires for teachers, students and tutors.",
+	"work_cardtitle4": "Asociación de Profesores de Japonés en España (APJE)",
+	"work_carddesc4": "Translating japanese blog posts about events and activities organised by the association.",
+	"work_title2": "<0>Other</0> projects",
+	"work_cardtitle5": "Simple MMO App Hub",
+	"work_carddesc5": "Localising the multifunction Windows client of the webgame SimpleMMO.",
+	"work_cardtitle6": "LocJAM 6: Not Enough Time",
+	"work_carddesc6": "Participant in the sixth edition of itch.io's LocJAM localisation event to translate the game Not Enough Time. Our team consisted of six members and I was responsible for project management, task division and file preparation, as well as translating and proofreading.",
+	"work_cardlink1": "Visit site",
+	
+	
+	"_comment": "CONTACT STRINGS",
+	
+	"contact_title1": "<1>Contact</1> me",
+	"contact_title2": "Or reach through <1>social media</1>",
+	"form_title": "Send me an email!",
+	"form_name": "Name",
+	"ph_name": "Your name",
+	"form_mail": "Email address",
+	"ph_mail": "Your email address",
+	"form_message": "Message",
+	"ph_message": "Write your message here",
+	"form_submit": "Send",
+	
+	
+	"endend": "null"
+}

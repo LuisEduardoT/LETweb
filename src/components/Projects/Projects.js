@@ -8,25 +8,27 @@ import gamigration from "../../Assets/Projects/GAMIGRATION.png";
 import loki from "../../Assets/Projects/Loki.png";
 import AppHub from "../../Assets/Projects/AppHub.png";
 import ingame from "../../Assets/Projects/INGAME.png";
+import { useTranslation, Trans } from "react-i18next";
 
 function Projects() {
+	const { t } = useTranslation();
   return (
     <Container fluid className="project-section">
       <Particle />
       <Container>
         <h1 className="project-heading">
-          Mis últimos <strong className="purple">proyectos</strong>
+          <Trans i18nKey="work_title1">Mis últimos <strong className="purple">proyectos</strong></Trans>
         </h1>
         <p style={{ color: "white" }}>
-          Aquí puedes echar un vistazo a lo que he estado haciendo recientemente.
+		  {t("work_description1")}
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={loki}
               isBlog={false}
-              title="Loki Games OÜ"
-              description="Localización de textos ingame y traducción de contenido web y publicaciones para redes."
+              title={t("work_cardtitle1")}
+              description={t("work_carddesc1")}
               ghLink="https://www.lokilize.com/"
               // demoLink="https://chatify-49.web.app/"
             />
@@ -36,8 +38,8 @@ function Projects() {
             <ProjectCard
               imgPath={ingame}
               isBlog={false}
-              title="Proyecto INGAME"
-              description="Localización de un videojuego educativo y documentos formativos."
+              title={t("work_cardtitle2")}
+              description={t("work_carddesc2")}
               ghLink="https://grial.usal.es/ingame"
               // demoLink="https://blogs.soumya-jit.tech/"
             />
@@ -47,8 +49,8 @@ function Projects() {
             <ProjectCard
               imgPath={gamigration}
               isBlog={false}
-              title="Proyecto GAMIGRATION"
-              description="Traducción de cuestionarios para profesores, estudiantes y padres y madres del proyecto"
+              title={t("work_cardtitle3")}
+              description={t("work_carddesc3")}
               ghLink="https://gamigration.eu/"
               // demoLink="https://editor.soumya-jit.tech/"              
             />
@@ -58,8 +60,8 @@ function Projects() {
             <ProjectCard
               imgPath={apje}
               isBlog={false}
-              title="Asociación de Profesores de Japonés en España (APJE)"
-              description="Traducción de japonés a español de diversas entradas del blog pertenecientes a eventos y actividades organizadas por la asociación."
+              title={t("work_cardtitle4")}
+              description={t("work_carddesc4")}
               ghLink="https://www.apje.es/wordpress/es/eventos/"
               // demoLink="https://plant49-ai.herokuapp.com/"
             />
@@ -68,7 +70,7 @@ function Projects() {
       </Container>
 	  <Container>
         <h1 className="project-heading">
-          <strong className="purple">Otros</strong> proyectos
+          <Trans i18nKey="work_title2"><strong className="purple">Otros</strong> proyectos</Trans>
         </h1>
         <p style={{ color: "white" }}>
           Colaboraciones con pequeños desarrolladores y eventos de voluntariado.
@@ -78,8 +80,8 @@ function Projects() {
             <ProjectCard
               imgPath={AppHub}
               isBlog={false}
-              title="Simple MMO App Hub"
-              description="Localización del cliente multifunción para Windows del videojuego web SimpleMMO"
+              title={t("work_cardtitle5")}
+              description={t("work_carddesc5")}
               ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
               // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
             />
@@ -89,8 +91,8 @@ function Projects() {
             <ProjectCard
               imgPath={locjam}
               isBlog={false}
-              title="LocJAM 6: Not Enough Time"
-              description="Participante en la sexta edición del evento de localización LocJAM de itch.io para traducir el juego Not Enough Time. El equipo estuvo formado por seis integrantes y fui responsable de la gestión del proyecto, divisón de tareas y preparación de archivos, además de traducir y revisar."
+              title={t("work_cardtitle6")}
+              description={t("work_carddesc6")}
               ghLink="https://luiseddie.itch.io/es-es-not-enough-time-locjam-6"
               // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
             />

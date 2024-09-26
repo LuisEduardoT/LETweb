@@ -6,15 +6,17 @@ import {
   AiFillMail,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 
 function Footer() {
+  const { t } = useTranslation();
   let date = new Date();
   let year = date.getFullYear();
   return (
     <Container fluid className="footer">
       <Row>
         <Col md="4" className="footer-copywright">
-          <h3>Desarrollado por Soumyajit Behera</h3>
+          <h3>{t("credit")}</h3>
         </Col>
         <Col md="4" className="footer-copywright">
           <h3>Copyright © {year} SB</h3>
@@ -23,7 +25,7 @@ function Footer() {
           <ul className="footer-icons">
             <li className="social-icons">
               <a
-                href="mailto:contacto@luiseduardotraduccion.com?"
+                href="mailto:info@luiseduardotraduccion.com?"
                 style={{ color: "white" }}
                 target="_blank" 
                 rel="noopener noreferrer"
